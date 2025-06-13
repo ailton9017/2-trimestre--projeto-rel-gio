@@ -2,10 +2,10 @@
 
 :root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #c30b36;
+    --verde: #23b13d;
     --branco: #FFFFFF;
     --botao-ativo: #5e5237;
-    --botao-inativo: rgba(220, 244, 39, 0.5);
+    --botao-inativo: rgba(233, 196, 32, 0.5);
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -60,10 +60,28 @@ body {
     display: block;
 }
 
+
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
+
+.abas-textos{
+    background-color: var(--cor-de-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.botao.ativo{
+    background-color: var(--botao-inativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-conteudo.ativo{
+    display: block;
+}
+
+
 @media screen and (mid-width:768px){
     .botoes{
         display: flex;
